@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-algorithm-finder",
+  "version": "0.1.0",
+  "description": "Algorithm Finder MCP — which algorithm, data structure or technique fits a",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-algorithm-finder": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "algorithm-finder"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-algorithm-finder.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-efa96b58ed798d83d93d62b1b3bd9a8dc204678a7696e044cd01716de9a3326a",
+    "sourceCommit": "e369dfedd93d5fcbf521281559a146302c14e1a0"
+  }
+}
