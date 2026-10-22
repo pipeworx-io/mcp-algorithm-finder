@@ -11,7 +11,7 @@ import * as bakedIndexModule from './af-index-data.js';
 const bakedIndex = Object.fromEntries(Object.entries(bakedIndexModule));
 
 const server = new Server(
-  { name: '@pipeworx/mcp-algorithm-finder', version: '0.1.2' },
+  { name: '@pipeworx/mcp-algorithm-finder', version: '0.1.3' },
   { capabilities: { tools: {} } },
 );
 
