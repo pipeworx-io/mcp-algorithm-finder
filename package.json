@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-algorithm-finder",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Algorithm Finder MCP — which algorithm, data structure or technique fits a computational problem: the standard textbook answer with its preconditions and complexity bounds, and the recent research answer with dates.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-algorithm-finder": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "algorithm-finder"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-algorithm-finder.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/algorithm-finder",
   "pipeworx": {
-    "sourceHash": "v1-6da509bb49a83078d06c913c89ab2048e3a05c8d8315bca2d15f71fa7fd119f7",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "algorithm-finder",
+    "gatewaySlug": "algorithm-finder",
+    "sourceHash": "v1-bb1adf1824e352048a5483e1c26503470bf0ab89645c3886dd05422a75dda69c",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
