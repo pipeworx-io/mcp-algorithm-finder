@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-algorithm-finder",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Algorithm Finder MCP — which algorithm, data structure or technique fits a computational problem: the standard textbook answer with its preconditions and complexity bounds, and the recent research answer with dates.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "algorithm-finder",
     "gatewaySlug": "algorithm-finder",
-    "sourceHash": "v1-bb1adf1824e352048a5483e1c26503470bf0ab89645c3886dd05422a75dda69c",
-    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
+    "sourceHash": "v1-df08e22b178d709f91a3bbea35398e1cc4bd3b355a6f9763424cd07288704ade",
+    "sourceCommit": "aef970216f5309cdd22a27ddfc275e472aaadac1"
   }
 }
